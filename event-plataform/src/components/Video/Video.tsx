@@ -44,7 +44,6 @@ export function Video(props: VideoProps) {
               {data.lesson.description}
             </p>
 
-            {/* Se a info de teacher existir, ou seja as info do prof é opcional  */}
             {data.lesson.teacher && (
               <div className="flex items-center gap-4 mt-6">
                 <img
