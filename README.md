@@ -19,7 +19,7 @@
 <img src='https://github.com/PedrohvFernandes/maratona-ignite-lab/blob/main/event-plataform/public/screenshot/Screen4.png'/>
 
 ## Deploy
-- Em breve
+- [Maratona Ignite Lab na vercel](https://maratona-ignite-lab.vercel.app)
 
 ## ✨Tecnologias:
 
