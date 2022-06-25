@@ -13,8 +13,10 @@
 - Demonstração Web: https://www.figma.com/proto/M1hb6wN2Dsgx5BMzRxivCh/Plataforma-de-evento---Ignite-Lab-(Community)?page-id=0%3A1&node-id=8%3A399&viewport=-1061%2C780%2C0.46&scaling=min-zoom
 
 ## 🌐 Demonstração do app na web:
-<img width='350' src=''/>
-
+<img src='https://github.com/PedrohvFernandes/maratona-ignite-lab/blob/main/event-plataform/public/screenshot/Screen1.png'/>
+<img src='https://github.com/PedrohvFernandes/maratona-ignite-lab/blob/main/event-plataform/public/screenshot/Screen2.png'/>
+<img src='https://github.com/PedrohvFernandes/maratona-ignite-lab/blob/main/event-plataform/public/screenshot/Screen3.png'/>
+<img src='https://github.com/PedrohvFernandes/maratona-ignite-lab/blob/main/event-plataform/public/screenshot/Screen4.png'/>
 
 ## Deploy
 - Em breve
