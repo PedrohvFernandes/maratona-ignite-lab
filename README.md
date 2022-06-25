@@ -48,6 +48,7 @@
 - Deixar o Layout responsivo;
 - Colocar algo no /event quando o usuário não clicar em nem uma aula;
 - Tela de loading(spinner) quando clicar em uma aula;
+- OAUTH com o github, para acessar a proxima pagina do evento, se não logar e autorizar com o github, não pode passar pra proxima pagina /event
 
 ## Executando o projeto local: 
 ### event-platform
