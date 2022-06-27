@@ -5,6 +5,7 @@ import Cards from './Cards'
 
 import '@vime/core/themes/default.css'
 import { useGetLessonBySlugQuery } from '../../graphql/generated'
+import { LoadingLesson } from '../Loading/LoadingLesson'
 
 interface VideoProps {
   lessonSlug: string
@@ -19,9 +20,7 @@ export function Video(props: VideoProps) {
   })
   if (!data || !data.lesson) {
     return (
-      <div className="flex-1">
-        <p>Carregando...</p>
-      </div>
+      <LoadingLesson/>
     )
   }
 
