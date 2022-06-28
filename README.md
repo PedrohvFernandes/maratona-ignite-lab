@@ -47,7 +47,7 @@
 - So pode assistir as aulas de acordo com a data prevista na interface.
 
 ## 🛠️ Próximas atualizações:
-- Deixar o Layout responsivo;
+- Deixar o Layout responsivo; ✔️
 - Colocar algo no /event quando o usuário não clicar em nem uma aula; ✔️
 - Tela de loading(spinner) quando clicar em uma aula e no botão de se cadastrar; ✔️
 - Footer; ✔️

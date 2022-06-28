@@ -35,16 +35,16 @@ export function Video(props: VideoProps) {
         </div>
       </div>
 
-      <div className="p-8 max-w-[1100px] mx-auto">
-        <div className="flex items-start gap-16">
-          <div className="flex-1">
+      <div className="p-8 max-w-[1100px] mx-auto text-center xl:text-start">
+        <div className="flex flex-col xl:flex-row items-center xl:items-start gap-16">
+          <div className="flex-1 flex flex-col xl:block">
             <h1 className="text-2xl font-bold">{data.lesson.title}</h1>
             <p className="mt-4 text-gray-200 leading-relaxed">
               {data.lesson.description}
             </p>
 
             {data.lesson.teacher && (
-              <div className="flex items-center gap-4 mt-6">
+              <div className="flex flex-col xl:flex-row items-center gap-4 mt-6">
                 <img
                   className="h-16 w-16 rounded-full border-2 border-blue-500"
                   src={data.lesson.teacher.avatarURL}
@@ -66,7 +66,7 @@ export function Video(props: VideoProps) {
             <Button type="secondary" href="#" />
           </div>
         </div>
-        <div className="gap-8 mt-20 grid grid-cols-2">
+        <div className="gap-8 mt-20 grid sm:grid-cols-2">
           <Cards type="primary" href="#" />
           <Cards type="secondary" href="#" />
         </div>

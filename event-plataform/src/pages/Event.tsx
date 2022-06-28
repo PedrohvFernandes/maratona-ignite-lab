@@ -1,6 +1,6 @@
 import { useParams } from 'react-router-dom'
 import { Footer } from '../components/Footer'
-import { Header } from '../components/Header'
+import { Header } from '../components/Header/Header'
 import { LoadingEvent } from '../components/Loading/LoadingEvent'
 import { Sidebar } from '../components/Sidebar'
 import { Video } from '../components/Video/Video'
@@ -13,9 +13,13 @@ export function Event() {
       <Header />
       <main className="flex flex-1">
         {slug ? <Video lessonSlug={slug} /> : <LoadingEvent />}
-        <Sidebar />
+        <div className="hidden xl:flex flex-initial">
+          <Sidebar />
+        </div>
       </main>
-      <Footer />
+      <div className="flex w-full bg-gray-900 px-8">
+        <Footer />
+      </div>
     </div>
   )
 }

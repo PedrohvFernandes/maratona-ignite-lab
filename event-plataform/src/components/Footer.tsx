@@ -1,8 +1,8 @@
 import { LogoRocket } from './LogoRocket'
 export function Footer() {
   return (
-    <footer className="flex justify-between items-center border-t border-gray-500 p-[2rem] bg-gray-900 w-full">
-      <div className="flex items-center gap-[1.5rem]">
+    <footer className="flex flex-col p-[2rem] md:flex-row text-center items-center justify-between w-full border-t border-gray-500">
+      <div className="flex flex-col md:flex-row items-center gap-6">
         <LogoRocket />
 
         <p>Rocketseat - Todos os diretos reservados</p>
