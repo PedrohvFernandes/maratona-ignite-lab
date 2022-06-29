@@ -7,7 +7,7 @@ export function Header() {
   const [toggleMenu, setToggleMenu] = useState(false)
 
   return (
-    <header className="w-full py-5 px-11 gap-[1rem] flex items-center justify-between xl:justify-center bg-gray-700 border-b border-gray-600">
+    <header className="w-full py-5 px-11 gap-[1rem] flex items-center justify-between xl:justify-center bg-gray-700 border-b border-gray-600 fixed z-[1000]">
       <Logo />
       <div className="xl:hidden">
         {toggleMenu ? (

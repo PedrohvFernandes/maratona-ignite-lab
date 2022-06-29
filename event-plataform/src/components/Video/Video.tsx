@@ -12,16 +12,13 @@ interface VideoProps {
 }
 
 export function Video(props: VideoProps) {
-
   const { data } = useGetLessonBySlugQuery({
     variables: {
       slug: props.lessonSlug
     }
   })
   if (!data || !data.lesson) {
-    return (
-      <LoadingLesson/>
-    )
+    return <LoadingLesson />
   }
 
   return (
@@ -35,8 +32,8 @@ export function Video(props: VideoProps) {
         </div>
       </div>
 
-      <div className="p-8 max-w-[1100px] mx-auto text-center xl:text-start">
-        <div className="flex flex-col xl:flex-row items-center xl:items-start gap-16">
+      <div className="p-8 max-w-[1100px] mx-auto">
+        <div className="flex flex-col xl:flex-row  xl:items-start gap-16">
           <div className="flex-1 flex flex-col xl:block">
             <h1 className="text-2xl font-bold">{data.lesson.title}</h1>
             <p className="mt-4 text-gray-200 leading-relaxed">
@@ -44,7 +41,7 @@ export function Video(props: VideoProps) {
             </p>
 
             {data.lesson.teacher && (
-              <div className="flex flex-col xl:flex-row items-center gap-4 mt-6">
+              <div className="flex flex-col sm:flex-row  text-center sm:text-start items-center gap-4 mt-6">
                 <img
                   className="h-16 w-16 rounded-full border-2 border-blue-500"
                   src={data.lesson.teacher.avatarURL}
@@ -61,7 +58,7 @@ export function Video(props: VideoProps) {
               </div>
             )}
           </div>
-          <div className="flex flex-col gap-4">
+          <div className="flex justify-center flex-col xl:flex-col sm:flex-row gap-4">
             <Button type="primary" href="#" />
             <Button type="secondary" href="#" />
           </div>

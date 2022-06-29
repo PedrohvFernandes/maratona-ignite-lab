@@ -1,54 +1,55 @@
-import { CaretRight, FileArrowDown, Image } from "phosphor-react"
+import { CaretRight, FileArrowDown, Image } from 'phosphor-react'
 
-interface CardsProps{
+interface CardsProps {
   type: 'primary' | 'secondary'
   href: string
 }
 
-export default function Cards({type, href}:CardsProps){
-  return(
+export default function Cards({ type, href }: CardsProps) {
+  return (
     <>
-      {type === 'primary' ?(
-        <a 
+      {type === 'primary' ? (
+        <a
           href={href}
-          className='bg-gray-700 rounded overflow-hidden flex items-stretch gap-2 xl:gap-6 hover:bg-gray-600 transition-colors'
+          className="bg-gray-700 rounded overflow-hidden flex items-stretch gap-2 xl:gap-6 hover:bg-gray-600 transition-colors"
         >
           <div className="bg-green-700 h-full p-1 xl:p-6 flex items-center">
-            <FileArrowDown size={40}/>
+            <FileArrowDown size={40} />
           </div>
           <div className="py-6 leading-relaxed">
-            <strong className="xl:text-2xl">
+            <strong className="text-sm sm:text-2xl">
               Material complementar
             </strong>
             <p className="text-sm text-gray-200 mt-2 hidden sm:block">
-             Acesse o material complementar para acelerar o seu desenvolvimento
+              Acesse o material complementar para acelerar o seu desenvolvimento
             </p>
-          </div>  
+          </div>
           <div className="h-full p-6 flex items-center">
-            <CaretRight size={24}/>
+            <CaretRight size={24} />
           </div>
         </a>
-      ): (
-        <a 
-        href={href}
-        className='bg-gray-700 rounded overflow-hidden flex items-stretch gap-2 xl:gap-6 hover:bg-gray-600 transition-colors'
+      ) : (
+        <a
+          href={href}
+          className="bg-gray-700 rounded overflow-hidden flex items-stretch gap-2 xl:gap-6 hover:bg-gray-600 transition-colors"
         >
           <div className="bg-green-700 h-full p-1 xl:p-6 flex items-center">
-            <Image size={40}/>
+            <Image size={40} />
           </div>
           <div className="py-6 leading-relaxed">
-            <strong className="xl:text-2xl">Wallpapers exclusivos</strong>
+            <strong className="text-sm sm:text-2xl">
+              Wallpapers exclusivos
+            </strong>
             <p className="text-sm text-gray-200 mt-2 hidden sm:block">
-              Baixe wallpapers exclusivos do Ignite Lab e personalize a sua máquina
+              Baixe wallpapers exclusivos do Ignite Lab e personalize a sua
+              máquina
             </p>
-          </div>  
+          </div>
           <div className="h-full p-6 flex items-center">
-            <CaretRight size={24}/>
+            <CaretRight size={24} />
           </div>
         </a>
-      )
-      }
-    
+      )}
     </>
   )
 }
