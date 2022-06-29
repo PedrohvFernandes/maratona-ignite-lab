@@ -17,7 +17,7 @@ export function Lesson(props: LessonProps) {
 
   const availableDateFormatted = format(
     props.availableAt,
-    "EEEE' • 'd' de 'MMMM' • 'k'h'mm",
+    "EEEE' • 'd' de 'MMMM ' de 'uuuu' • 'k'h'mm",
     {
       locale: ptBR
     }
